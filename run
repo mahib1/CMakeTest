@@ -1,0 +1,10 @@
+#!/bin/zsh
+
+mkdir build 
+cd build
+cmake .. 
+make 
+cd bin 
+echo "Now you can run the file using ./hello <args>"
+cd ../..
+cp ./build/bin/hello ./hello
